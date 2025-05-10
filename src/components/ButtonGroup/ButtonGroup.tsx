@@ -4,14 +4,16 @@ import {ButtonGroupProps} from "@/components/ButtonGroup/ButtonGroup.types";
 
 export default function ButtonGroup({
     leftButtonText = 'Prev',
-    rightButtonText = 'Next',}: ButtonGroupProps)
+    rightButtonText = 'Next',
+    onLeftClick,
+    onRightClick}: ButtonGroupProps)
 {
 
     return (
         <>
             <div>
-                <Button variant={"groupPrev"}>{leftButtonText}</Button>
-                <Button variant={"groupNext"}>{rightButtonText}</Button>
+                <Button variant={"groupPrev"} onClick={() => onLeftClick}>{leftButtonText}</Button>
+                <Button variant={"groupNext"} onClick={() => onRightClick}>{rightButtonText}</Button>
             </div>
         </>
     )
