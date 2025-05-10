@@ -39,7 +39,7 @@ export default function NavBar({
                     })}
                 </div>
                 {/*button*/}
-                <Button variant={"outline"}>Download</Button>
+                <Button className="text-white border-white" variant={"outline"}>Download</Button>
                 {/*hamburger*/}
             </nav>
         </>
