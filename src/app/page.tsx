@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
+import ButtonGroup from "@/components/ButtonGroup/ButtonGroup";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
             <Button variant={"elevated"} >
                 Button
             </Button>
+            <ButtonGroup></ButtonGroup>
         </div>
     </>
   );
