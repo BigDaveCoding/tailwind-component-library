@@ -1,6 +1,7 @@
 import React from 'react';
 import {ButtonProps} from "@/components/Button";
 import {buttonVariants} from "@/components/Button/Button.variants";
+import { ArrowDownTrayIcon } from '@heroicons/react/24/solid';
 
 export default function Button({
     children,
@@ -19,7 +20,14 @@ export default function Button({
 
     return (
         <button className={finalStyle} disabled={disabled}>
-            {children}
+            {variant === 'download' ? (
+                <div className="flex items-center gap-2 text-center">
+                    <ArrowDownTrayIcon className="h-4 w-4" />
+                    <p>Download</p>
+                </div>
+            ) : (
+                children
+            )}
         </button>
     )
 }
