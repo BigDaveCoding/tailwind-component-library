@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { ButtonGroup } from "@/components/ButtonGroup";
+import NavBar from "@/components/Navigation/NavBar";
 
 export default function Home() {
   return (
@@ -36,6 +37,8 @@ export default function Home() {
                 Button
             </Button>
         </div>
+
+        <NavBar/>
     </>
   );
 }
