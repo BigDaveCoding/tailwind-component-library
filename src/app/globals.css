@@ -6,9 +6,12 @@
 }
 
 @theme {
+  --color-gray1: #F3F4F6;
+  --color-gray4: #9CA3AF;
   --color-gray5: #6B7280;
   --color-gray6: #4B5563;
   --color-gray7: #374151;
+  --color-gray8: #1F2937;
 }
 
 @theme inline {
