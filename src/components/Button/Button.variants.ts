@@ -35,6 +35,10 @@ export const buttonVariants = {
         'default' : 'bg-gray2 rounded-r-md text-gray8',
         'hover' : 'hover:bg-gray3'
     },
+    'download' : {
+        'default' : 'bg-gray2 rounded-md text-gray8',
+        'hover' : 'hover:bg-gray3'
+    },
     'sizes' : {
         'small' : 'text-sm px-2 py-1',
         'medium' : 'px-4 py-2',

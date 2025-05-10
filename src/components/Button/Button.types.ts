@@ -2,7 +2,7 @@ import React from "react";
 
 // creating custom typescript types
 // variant and size must be one of the options provided
-export type ButtonVariant = 'primitive' | 'simple' | 'rounded' | 'outline' | 'bordered' | '3d' | 'elevated' | 'groupPrev' | 'groupNext';
+export type ButtonVariant = 'primitive' | 'simple' | 'rounded' | 'outline' | 'bordered' | '3d' | 'elevated' | 'groupPrev' | 'groupNext' | 'download';
 export type ButtonSize = 'small' | 'medium' | 'large';
 
 // ButtonHTMLAttributes inherits all standard button attributes i.e. onClick | disabled etc.
