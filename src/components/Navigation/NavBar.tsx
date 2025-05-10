@@ -2,12 +2,13 @@ import React from "react";
 import {NavBarProps} from "@/components/Navigation/NavBar.types";
 import {NavBarVariants} from "@/components/Navigation/NavBar.variants";
 import Link from "next/link";
+import {Button} from "@/components/Button";
 
 export default function NavBar({
     children,
     title = "Tailwind CSS",
     variant = "default",
-    links = [{label: "Docs", href: "#"}, {label: "Examples", href: "#"}],
+    links = [{label: "Docs", href: "#"}, {label: "Examples", href: "#"}, {label: 'Blog', href: "#"}],
    ...props
 }: NavBarProps) {
 
@@ -19,6 +20,7 @@ export default function NavBar({
     return (
         <>
             <nav className={`${baseNavContainerStyle} ${navContainerStyle}`}>
+
                 <div className={`flex items-center text-center gap-2`}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                          stroke="currentColor" className={`${logoStyle}`}>
@@ -28,13 +30,16 @@ export default function NavBar({
                     {/*title*/}
                     <h1 className={`${titleStyle}`}>{title}</h1>
                 </div>
-                {links.map((link, index) => {
-                    return (
-                        <Link href={link.href}>{link.label}</Link>
-                    )
-                })}
-                {/*links*/}
+
+                <div className={`px-6 flex gap-6`}>
+                    {links.map((link, index) => {
+                        return (
+                            <Link href={link.href} className={`text-green2 font-light`}>{link.label}</Link>
+                        )
+                    })}
+                </div>
                 {/*button*/}
+                <Button variant={"outline"}>Download</Button>
                 {/*hamburger*/}
             </nav>
         </>
