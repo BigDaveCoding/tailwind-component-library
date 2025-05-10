@@ -12,7 +12,7 @@ export const buttonVariants = {
         'hover' : 'hover:bg-gray7'
     },
     'outline' : {
-        'default' : 'bg-white border border-gray6 rounded-md text-gray7',
+        'default' : 'bg-none border border-gray6 rounded-md text-gray7',
         'hover' : 'hover:bg-gray7 hover:border-gray7 hover:text-white'
     },
     'bordered' : {
