@@ -32,6 +32,9 @@ export default function Home() {
             <Button variant={"download"} >
                 Download
             </Button>
+            <Button disabled={true}>
+                Button
+            </Button>
         </div>
     </>
   );
