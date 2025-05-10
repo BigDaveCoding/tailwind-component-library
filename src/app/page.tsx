@@ -20,7 +20,9 @@ export default function Home() {
         <Button variant={"bordered"} >
             Button
         </Button>
-
+        <Button variant={"3d"} >
+            Button
+        </Button>
     </>
   );
 }
