@@ -1,21 +1,21 @@
 export const NavBarVariants = {
     'default' : {
         'navContainer' : 'bg-green5 w-[850px] h-[72px] ',
-        'logoText' : 'text-white',
-        'logo' : 'size-10 text-white',
+        'title' : 'text-white text-xl font-bold',
+        'logo' : 'w-[32px] h-[19.2] text-white',
         'links' : '',
         'button' : '',
     },
     'collapsed' : {
         'navContainer' : 'bg-gray4',
-        'logoText' : '',
-        'logo' : 'size-6 text-white',
+        'title' : '',
+        'logo' : 'w-[32px] h-[19.2] text-white',
         'links' : '',
         'button' : '',
     },
     'expanded' : {
         'navContainer' : 'bg-gray4',
-        'logoText' : '',
+        'title' : '',
         'logo' : '',
         'links' : '',
         'button' : '',

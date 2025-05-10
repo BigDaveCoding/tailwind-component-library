@@ -9,6 +9,6 @@ export interface NavBarProps {
     children?: React.ReactNode;
     title?: string;
     variant?: NavBarVariant;
-    links: NavLinks[];
+    links?: NavLinks[];
     buttonText?: string;
 }
