@@ -16,8 +16,12 @@ export const buttonVariants = {
         'hover' : 'hover:bg-gray7 hover:text-white'
     },
     'bordered' : {
-        'default' : 'bg-gray6 border border-gray7 rounded-md text-white',
+        'default' : 'bg-gray6 inset-ring inset-ring-gray7 rounded-md text-white',
         'hover' : 'hover:bg-gray7'
+    },
+    '3d' : {
+        'default' : 'bg-gray6 text-white rounded-md box-shadows',
+        'hover' : ''
     },
     'sizes' : {
         'small' : 'text-sm px-2 py-1',
