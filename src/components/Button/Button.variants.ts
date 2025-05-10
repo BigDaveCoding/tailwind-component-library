@@ -20,7 +20,11 @@ export const buttonVariants = {
         'hover' : 'hover:bg-gray7'
     },
     '3d' : {
-        'default' : 'bg-gray6 text-white rounded-md box-shadows',
+        'default' : 'bg-gray6 text-white rounded-md shadow-[inset_0_-4px_0_0_var(--color-gray7)] transition-shadow',
+        'hover' : 'hover:bg-gray5 hover:shadow-[inset_0_-2px_0_0_var(--color-gray6)]'
+    },
+    'elevated' : {
+        'default' : '',
         'hover' : ''
     },
     'sizes' : {
