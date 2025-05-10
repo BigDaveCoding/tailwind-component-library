@@ -17,10 +17,11 @@ export default function Button({
     const variantHoverStyles: string = buttonVariants[variant].hover || '';
     const sizeStyles: string = buttonVariants.sizes[size] || '';
     const disabledStyle: string = 'cursor-not-allowed bg-gray5 text-white';
+    const propStyles: string = props['className'] || '';
 
     const finalStyle: string = disabled
         ? `${disabledStyle} ${sizeStyles}`
-        : `${baseStyles} ${variantStyles} ${variantHoverStyles} ${sizeStyles}`;
+        : `${baseStyles} ${variantStyles} ${variantHoverStyles} ${sizeStyles} ${propStyles}`;
 
     return (
         <button className={finalStyle} disabled={disabled}>
