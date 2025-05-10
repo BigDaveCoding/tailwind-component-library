@@ -24,8 +24,8 @@ export const buttonVariants = {
         'hover' : 'hover:bg-gray5 hover:shadow-[inset_0_-2px_0_0_var(--color-gray6)]'
     },
     'elevated' : {
-        'default' : '',
-        'hover' : ''
+        'default' : 'inset-ring inset-ring-gray4 rounded-md shadow-md text-gray8',
+        'hover' : 'hover:bg-gray1'
     },
     'sizes' : {
         'small' : 'text-sm px-2 py-1',
