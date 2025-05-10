@@ -28,7 +28,10 @@ export default function Home() {
             <Button variant={"elevated"} >
                 Button
             </Button>
-            <ButtonGroup></ButtonGroup>
+            <ButtonGroup />
+            <Button variant={"download"} >
+                Download
+            </Button>
         </div>
     </>
   );
