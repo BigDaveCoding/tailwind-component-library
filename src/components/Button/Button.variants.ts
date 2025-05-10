@@ -27,6 +27,14 @@ export const buttonVariants = {
         'default' : 'inset-ring inset-ring-gray4 rounded-md shadow-md text-gray8',
         'hover' : 'hover:bg-gray1'
     },
+    'groupPrev' : {
+        'default' : 'bg-gray2 rounded-l-md text-gray8',
+        'hover' : 'hover:bg-gray3'
+    },
+    'groupNext' : {
+        'default' : 'bg-gray2 rounded-r-md text-gray8',
+        'hover' : 'hover:bg-gray3'
+    },
     'sizes' : {
         'small' : 'text-sm px-2 py-1',
         'medium' : 'px-4 py-2',
