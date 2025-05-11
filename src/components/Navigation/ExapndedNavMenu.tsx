@@ -1,11 +1,17 @@
 import {NavBarProps} from "@/components/Navigation/NavBar.types";
 import Link from "next/link";
+import {Button} from "@/components/Button";
+import React from "react";
+import { NavBarVariants } from "@/components/Navigation/NavBar.variants";
 
 
 export default function ExtendedNavMenu({
-    children,
+    variant = "expanded",
     links = [{label: "Docs", href: "#"}, {label: "Examples", href: "#"}, {label: 'Blog', href: "#"}],
                                         }: NavBarProps) {
+
+    const buttonStyle = NavBarVariants[variant].button;
+
     return (
         <>
             <div className="flex flex-col">
@@ -14,6 +20,9 @@ export default function ExtendedNavMenu({
                         <Link key={link.label} href={link.href}>{link.label}</Link>
                     )
                 })}
+                <Button className={`${buttonStyle}`} variant={"outline"}>
+                    Download
+                </Button>
             </div>
         </>
     )
