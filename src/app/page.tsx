@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import { ButtonGroup } from "@/components/ButtonGroup";
 import NavBar from "@/components/Navigation/NavBar";
+import NavBarOpen from "@/components/Navigation/NavBarOpen";
 
 export default function Home() {
   return (
@@ -38,8 +39,12 @@ export default function Home() {
             </Button>
         </div>
 
-        <NavBar/>
-        <NavBar variant="collapsed"></NavBar>
+        <div className="flex flex-col gap-4">
+            <NavBar/>
+            <NavBar variant="collapsed"></NavBar>
+            <NavBarOpen />
+        </div>
+
     </>
   );
 }
