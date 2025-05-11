@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import { ButtonGroup } from "@/components/ButtonGroup";
-import NavBar from "@/components/Navigation/NavBar";
-import NavBarOpen from "@/components/Navigation/NavBarOpen";
+import { NavBar } from "@/components/Navigation";
+import { NavBarOpen } from "@/components/Navigation";
 
 export default function Home() {
   return (
