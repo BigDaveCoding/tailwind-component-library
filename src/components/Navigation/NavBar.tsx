@@ -36,11 +36,13 @@ export default function NavBar({
 
                     {isDefault &&
                         <div className={`flex ${linkContainerStyle}`}>
-                        {links.map((link, index) => {
-                            return (
-                                <Link key={index} href={link.href} className={`text-green2 font-light`}>{link.label}</Link>
-                            )
-                        })}
+                        {links.length !== 0 &&
+                            links.map((link) => {
+                                return (
+                                    <Link key={link.label} href={link.href} className={`text-green2 font-light`}>{link.label}</Link>
+                                )
+                            })
+                        }
                         </div>
                     }
                 </div>
