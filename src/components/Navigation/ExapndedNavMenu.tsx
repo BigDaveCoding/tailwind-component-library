@@ -16,7 +16,9 @@ export default function ExtendedNavMenu({
         <div className={`bg-green5 w-[375px] p-4 flex flex-col gap-4`}>
             {links.map((link) => {
                 return (
-                    <Link className={`${linkTextStyle}`} key={link.label} href={link.href}>{link.label}</Link>
+                    <div key={link.label}>
+                        <Link className={`${linkTextStyle}`} href={link.href}>{link.label}</Link>
+                    </div>
                 )
             })}
             <div>
