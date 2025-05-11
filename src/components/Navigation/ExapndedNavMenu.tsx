@@ -6,24 +6,24 @@ import { NavBarVariants } from "@/components/Navigation/NavBar.variants";
 
 
 export default function ExtendedNavMenu({
-    variant = "expanded",
     links = [{label: "Docs", href: "#"}, {label: "Examples", href: "#"}, {label: 'Blog', href: "#"}],
-                                        }: NavBarProps) {
+    }: NavBarProps) {
 
-    const buttonStyle = NavBarVariants[variant].button;
+    const buttonStyle = NavBarVariants['expanded'].button;
+    const linkTextStyle = NavBarVariants['expanded'].linkText;
 
     return (
-        <>
-            <div className="flex flex-col">
-                {links.map((link) => {
-                    return (
-                        <Link key={link.label} href={link.href}>{link.label}</Link>
-                    )
-                })}
+        <div className={`bg-green5 w-[375px] p-4 flex flex-col gap-4`}>
+            {links.map((link) => {
+                return (
+                    <Link className={`${linkTextStyle}`} key={link.label} href={link.href}>{link.label}</Link>
+                )
+            })}
+            <div>
                 <Button className={`${buttonStyle}`} variant={"outline"}>
                     Download
                 </Button>
             </div>
-        </>
+        </div>
     )
 }
