@@ -31,11 +31,11 @@ export default function NavBar({
                     <h1 className={`${titleStyle}`}>{title || "Title"}</h1>
                 </div>
                 {isDefault &&
-                    <div className={`flex px-6 gap-6`}>
+                    <div className={`flex px-6 py-2 gap-6`}>
                     {links.length !== 0 &&
                         links.map((link) => {
                             return (
-                                <Link key={link.label} href={link.href} className={`text-green2 font-light`}>{link.label}</Link>
+                                <Link key={link.label} href={link.href} className={`text-green2 font-light hover:text-blue5 transition-all duration-100 hover:underline hover:underline-offset-4 active:bg-blue5 active:text-white active:px-4`}>{link.label}</Link>
                             )
                         })
                     }
