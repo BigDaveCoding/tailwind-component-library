@@ -39,7 +39,7 @@ export default function Home() {
         </div>
 
         <NavBar/>
-        <NavBar variant="expanded"></NavBar>
+        <NavBar variant="collapsed"></NavBar>
     </>
   );
 }
