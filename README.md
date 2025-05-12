@@ -20,11 +20,3 @@ This repository is a **component library** built using **React**, **Next.js**, a
 
 The component designs are sourced from this Figma file:  
 👉 [Tailwind CSS UI – Community](https://www.figma.com/design/NQo6AVR1RzkA10QVkJ57bY/Tailwind-CSS-UI--Community-?node-id=1066-1059&t=s7lhjqU6gwu7lckO-0)
-
-## 📦 Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
