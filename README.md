@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# React + Next.js + TypeScript Component Library
 
-## Getting Started
+This repository is a **component library** built using **React**, **Next.js**, and **TypeScript**, based on the [Tailwind CSS UI – Community](https://www.figma.com/design/NQo6AVR1RzkA10QVkJ57bY/Tailwind-CSS-UI--Community-?node-id=1066-1059&t=s7lhjqU6gwu7lckO-0) Figma design file.
 
-First, run the development server:
+## 🚀 Project Goals
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Transform a beautiful community Figma design into a reusable component library
+- Use modern web tech stack: **React**, **Next.js**, **TypeScript**, and **Tailwind CSS**
+- Ensure components are modular, accessible, and production-ready
+- Enable seamless integration across projects or design systems
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Design Source
 
-## Learn More
+The component designs are sourced from this Figma file:  
+👉 [Tailwind CSS UI – Community](https://www.figma.com/design/NQo6AVR1RzkA10QVkJ57bY/Tailwind-CSS-UI--Community-?node-id=1066-1059&t=s7lhjqU6gwu7lckO-0)
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
